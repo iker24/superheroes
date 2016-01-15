@@ -1,0 +1,30 @@
+tipos:
+    path:     /
+    defaults: { _controller: "unisuperheroesBundle:TIPOS:index" }
+
+tipos_show:
+    path:     /{id}/show
+    defaults: { _controller: "unisuperheroesBundle:TIPOS:show" }
+
+tipos_new:
+    path:     /new
+    defaults: { _controller: "unisuperheroesBundle:TIPOS:new" }
+
+tipos_create:
+    path:     /create
+    defaults: { _controller: "unisuperheroesBundle:TIPOS:create" }
+    requirements: { _method: post }
+
+tipos_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "unisuperheroesBundle:TIPOS:edit" }
+
+tipos_update:
+    path:     /{id}/update
+    defaults: { _controller: "unisuperheroesBundle:TIPOS:update" }
+    requirements: { _method: post|put }
+
+tipos_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "unisuperheroesBundle:TIPOS:delete" }
+    requirements: { _method: post|delete }

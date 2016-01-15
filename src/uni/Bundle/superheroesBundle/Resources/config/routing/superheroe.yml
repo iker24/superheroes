@@ -1,0 +1,30 @@
+superheroe:
+    path:     /
+    defaults: { _controller: "unisuperheroesBundle:SUPERHEROE:index" }
+
+superheroe_show:
+    path:     /{id}/show
+    defaults: { _controller: "unisuperheroesBundle:SUPERHEROE:show" }
+
+superheroe_new:
+    path:     /new
+    defaults: { _controller: "unisuperheroesBundle:SUPERHEROE:new" }
+
+superheroe_create:
+    path:     /create
+    defaults: { _controller: "unisuperheroesBundle:SUPERHEROE:create" }
+    requirements: { _method: post }
+
+superheroe_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "unisuperheroesBundle:SUPERHEROE:edit" }
+
+superheroe_update:
+    path:     /{id}/update
+    defaults: { _controller: "unisuperheroesBundle:SUPERHEROE:update" }
+    requirements: { _method: post|put }
+
+superheroe_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "unisuperheroesBundle:SUPERHEROE:delete" }
+    requirements: { _method: post|delete }

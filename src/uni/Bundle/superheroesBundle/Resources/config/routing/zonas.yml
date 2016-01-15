@@ -1,0 +1,39 @@
+zonas:
+    path:     /
+    defaults: { _controller: "unisuperheroesBundle:ZONAS:index" }
+
+zonas_show:
+    path:     /{id}/show
+    defaults: { _controller: "unisuperheroesBundle:ZONAS:show" }
+
+zonas_new:
+    path:     /new
+    defaults: { _controller: "unisuperheroesBundle:ZONAS:new" }
+
+zonas_create:
+    path:     /create
+    defaults: { _controller: "unisuperheroesBundle:ZONAS:create" }
+    requirements: { _method: post }
+
+zonas_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "unisuperheroesBundle:ZONAS:edit" }
+
+zonas_update:
+    path:     /{id}/update
+    defaults: { _controller: "unisuperheroesBundle:ZONAS:update" }
+    requirements: { _method: post|put }
+
+zonas_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "unisuperheroesBundle:ZONAS:delete" }
+    requirements: { _method: post|delete }
+    
+zonas_buscar:
+    path:     /buscar
+    defaults: { _controller: "unisuperheroesBundle:ZONAS:buscar" }
+
+zonas_responder:
+    path:     /responder
+    defaults: { _controller: "unisuperheroesBundle:ZONAS:responder" }
+    requirements: { _method: post|put }

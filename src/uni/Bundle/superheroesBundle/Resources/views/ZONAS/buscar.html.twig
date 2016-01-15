@@ -1,0 +1,30 @@
+{% extends 'unisuperheroesBundle::layout.html.twig' %}
+
+{% block cuerpo %}
+  {# Ahora viene el javascript #}
+
+<script type="text/javascript">
+function submitform(obj) {
+document.forms["ZONAS"].submit();
+}
+</script>
+
+{# Fin del javascript #}
+<br>Buscar categoria:
+<form id="ZONAS" action="{{path('zonas_responder')}}" method="POST">
+    
+   <select name="nombre" onChange="submitform(this)">
+       <option value="Todas">Todas</option> 
+       
+       {% for c in cats %}
+            <option value={{c.nombre}}>{{c.nombre}}</option>
+        {% endfor %}
+    </select>  
+    
+    
+   
+    
+</form>
+      
+    
+{% endblock %}

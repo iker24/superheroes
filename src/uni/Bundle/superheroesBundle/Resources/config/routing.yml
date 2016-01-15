@@ -1,0 +1,16 @@
+unisuperheroes_tipos:
+    resource: "@unisuperheroesBundle/Resources/config/routing/tipos.yml"
+    prefix:   /tipos
+
+unisuperheroes_superheroe:
+    resource: "@unisuperheroesBundle/Resources/config/routing/superheroe.yml"
+    prefix:   /superheroe
+
+unisuperheroes_zonas:
+    resource: "@unisuperheroesBundle/Resources/config/routing/zonas.yml"
+    prefix:   /zonas
+
+unisuperheroes_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: unisuperheroesBundle:Default:index.html }
+

@@ -1,0 +1,48 @@
+{% extends '::base.html.twig' %}
+
+{% block cuerpo -%}
+    <h1>SUPERHEROE</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <td>{{ entity.nombre }}</td>
+            </tr>
+            <tr>
+                <th>Descripcion</th>
+                <td>{{ entity.descripcion }}</td>
+            </tr>
+            <tr>
+                <th>Habilidades</th>
+                <td>{{ entity.habilidades }}</td>
+            </tr>
+            <tr>
+                <th>Edad</th>
+                <td>{{ entity.edad|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Sexo</th>
+                <td>{{ entity.sexo }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('superheroe') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('superheroe_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

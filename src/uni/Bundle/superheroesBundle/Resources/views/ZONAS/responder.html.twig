@@ -1,0 +1,22 @@
+{% extends 'unisuperheroesBundle::layout.html.twig' %}
+
+{% block cuerpo %}
+    
+    <h1>Listado de categorias {{nombre}}:</h1>
+ <tbody>
+        {% for entity in entities %}
+            
+            
+        <h2><a href="{{ path('zonas_show', { 'id': entity.id }) }}">{{ entity.nombre }}</a></h2>
+              
+        <h6>{{ entity.descripcion }} 
+                
+       
+                <br>
+                
+                
+                
+                
+        {% endfor %}
+
+{% endblock %}

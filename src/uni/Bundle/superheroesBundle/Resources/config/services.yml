@@ -1,0 +1,4 @@
+services:
+#    unisuperheroes.example:
+#        class: uni\Bundle\superheroesBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

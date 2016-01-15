@@ -1,0 +1,4 @@
+unisuperheroes:
+    resource: "@unisuperheroesBundle/Resources/config/routing.yml"
+    prefix:   /
+
